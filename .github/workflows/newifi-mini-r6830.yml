@@ -23,6 +23,7 @@ jobs:
     - name: Initialization environment
       env:
         DEBIAN_FRONTEND: noninteractive
+        KERNEL: 3.4
       run: |
         sudo apt-get update
         sudo apt-get -y install unzip libtool-bin curl cmake gperf gawk flex bison nano xxd fakeroot \
@@ -36,6 +37,7 @@ jobs:
     - name: Build Firmware
       env:
         TNAME: NEWIFI-MINI
+         KERNEL: 3.4
       run: |
         cwd=`pwd`
         CONFIG_TOOLCHAIN_DIR=${cwd//\//\\\/}\\/toolchain-mipsel
