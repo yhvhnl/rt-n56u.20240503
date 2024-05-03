@@ -37,7 +37,6 @@ jobs:
     - name: Build Firmware
       env:
         TNAME: NEWIFI-MINI
-         KERNEL: 3.4
       run: |
         cwd=`pwd`
         CONFIG_TOOLCHAIN_DIR=${cwd//\//\\\/}\\/toolchain-mipsel
