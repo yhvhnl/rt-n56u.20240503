@@ -1,8 +1,8 @@
-name: Build MT7620
+name: Build NEWIFI-MINI 20240504
 
 on: 
-  release:
-    types: [published]
+  workflow_dispatch:
+
 #  push:
 #    tags:
 #    - 'v*'
